@@ -1,5 +1,5 @@
 /**
- * Terminal theme plugin, browser half: registers the CRT `terminal` theme with
+ * MECHA theme plugin, browser half: registers the alert-HUD `mecha` theme with
  * the theme service (alias-token overrides over the dark base palette) and
  * contributes one Appearance row that activates it. Purely additive — the
  * default surface is untouched, so every existing slot/widget keeps working
@@ -19,7 +19,7 @@ import { NS, zh, en } from './locales.ts'
 import { TerminalThemeRow, type TerminalThemeRowInjected } from './TerminalThemeRow.tsx'
 
 /** Theme id this plugin registers (the setTheme argument). */
-export const THEME_ID = 'terminal'
+export const THEME_ID = 'mecha'
 
 /** Bare observable snapshot source (getSnapshot + subscribe). */
 export interface ObservableSource<T> {
@@ -28,24 +28,24 @@ export interface ObservableSource<T> {
 }
 
 /**
- * CRT palette as alias-token overrides. The presenter writes these as inline
+ * MECHA klaxon palette as alias-token overrides. The presenter writes these as inline
  * CSS variables over the dark base palette, so the whole default UI (and any
  * widget registered into its slots) is recolored.
  */
 const TOKENS: ThemeTokens = {
-  '--dsw-alias-bg-base': '#000a00',
-  '--dsw-alias-bg-layer-1': '#02120a',
-  '--dsw-alias-bg-layer-2': '#031d10',
-  '--dsw-alias-bg-overlay': '#000a00',
-  '--dsw-alias-border-l1': '#1d7a3f',
-  '--dsw-alias-border-l2': '#2ea854',
-  '--dsw-alias-brand-primary': '#35e06a',
-  '--dsw-alias-label-primary': '#35e06a',
-  '--dsw-alias-label-secondary': '#2ea854',
-  '--dsw-alias-state-error-primary': '#e05a5a',
-  '--dsw-alias-state-success-primary': '#35e06a',
-  '--dsw-alias-state-warn-primary': '#e0c05a',
-  '--dsw-specific-sidebar-fill': '#001408',
+  '--dsw-alias-bg-base': '#0a0b0e',
+  '--dsw-alias-bg-layer-1': '#0a0b0e',
+  '--dsw-alias-bg-layer-2': '#0a0b0e',
+  '--dsw-alias-bg-overlay': '#0a0b0e',
+  '--dsw-alias-border-l1': '#602010',
+  '--dsw-alias-border-l2': '#b77920',
+  '--dsw-alias-brand-primary': '#ff3300',
+  '--dsw-alias-label-primary': '#ff3300',
+  '--dsw-alias-label-secondary': '#b77920',
+  '--dsw-alias-state-error-primary': '#ff2533',
+  '--dsw-alias-state-success-primary': '#ffaa00',
+  '--dsw-alias-state-warn-primary': '#ffaa00',
+  '--dsw-specific-sidebar-fill': '#0a0b0e',
 }
 
 /** Required services: slot registry for the Appearance row, the theme service, and locale. */

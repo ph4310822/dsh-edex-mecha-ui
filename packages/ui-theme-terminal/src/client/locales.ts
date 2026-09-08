@@ -15,10 +15,10 @@ declare module '@deepseek-ai/dsh-client-ui-slots' {
 
 /** Simplified Chinese dictionary. */
 export const zh: Record<ThemeTerminalKey, string> = {
-  'appearance.terminal': '终端',
+  'appearance.terminal': '机甲警报',
 }
 
 /** English dictionary. */
 export const en: Record<ThemeTerminalKey, string> = {
-  'appearance.terminal': 'Terminal',
+  'appearance.terminal': 'Mecha Alert',
 }

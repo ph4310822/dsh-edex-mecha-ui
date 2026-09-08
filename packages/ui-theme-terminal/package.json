@@ -1,7 +1,7 @@
 {
   "name": "@danielng23/dsh-mecha-client-ui-theme-terminal",
   "description": "MECHA alert-HUD theme for the web UI: registers the klaxon red/orange alias-token theme and an Appearance row to pick it",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publishConfig": {
     "access": "public"
   },
