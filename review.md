@@ -2,6 +2,8 @@
 
 **Verdict: PASS** (probe #3 after two fixes; 0 console errors across every probe)
 
+**Published verification**: the npm chain (`dsh-edex-mecha-ui@0.1.0` → `dsh-mecha-client-ui-edex@0.1.1` → `dsh-mecha-client-ui-theme-terminal@0.1.1` → `dsh-mecha-host-system-metrics@0.1.0`) was installed from the registry into a scratch DSH profile, booted on port 3086, and re-probed: **0 errors, workspace present, worldViewGone, `pattern` widget present, identical tokens** (`--edex-green #ff3300`, bodyBackground `rgb(10, 11, 14)`).
+
 ## Result summary
 
 | Check | Result |
@@ -18,6 +20,10 @@
 | Animation probe | **pass: true** — 19 running animations (18 hex-flicker + 1 marker-blink), opacity sampled changing, playState running, extent in container, 0 errors |
 | Animation diff (t0/t1) | 0.09% overall, confined to the hex-grid region (x 1067–1600, y 150–450) |
 | GIF | `preview.gif` 4s @ 12fps, 48 frames, 1.2 MB, 0 errors |
+
+Artifacts: the review screenshot was promoted to `screenshot.png` (repo root, referenced
+from the README); the captured frames/heatmaps live in the loop's vision-toolkit artifact
+directory (`.dsh-vision-toolkit/artifacts/mecha-review-diff`, `mecha-anim-diff`).
 
 ## Granularity check (per-element, zoomed)
 
