@@ -1,0 +1,85 @@
+/* INTERNAL widget: the MECHA identification card (orange variant). The huge
+   内部 glyphs, the INTERNAL label, and the vertical hazard-stripe block all
+   come from the variant's analysis.json — bright #ffaa00 fill, dark outline,
+   orange glow, diagonal #ff2533/#2c0401 stripes on the card's right edge. */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Vertical hazard-stripe block clipped inside the card's right edge:
+   ~45° diagonal bands, bright hazard red-pink alternating with dark red. */
+.stripe {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  bottom: -8px;
+  width: 18px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ff2533 0,
+    #ff2533 9px,
+    #2c0401 9px,
+    #2c0401 18px
+  );
+  opacity: 0.92;
+  pointer-events: none;
+}
+
+.kanji {
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #ffaa00;
+  -webkit-text-stroke: 1px #4a0d00;
+  text-shadow:
+    0 0 10px color-mix(in srgb, #ffaa00 55%, transparent),
+    0 2px 0 color-mix(in srgb, #000000 55%, transparent);
+  white-space: nowrap;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #ffaa00;
+  text-shadow: 0 0 8px color-mix(in srgb, #ffaa00 50%, transparent);
+  margin-bottom: 8px;
+}
+
+.clock {
+  font-size: 26px;
+  letter-spacing: 3px;
+  color: var(--edex-green);
+  text-align: center;
+  margin-bottom: 8px;
+  text-shadow: 0 0 8px color-mix(in srgb, var(--edex-green) 45%, transparent);
+}
+
+.specs {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 6px;
+}
+
+.specLine {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.specLine > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.specKey {
+  color: var(--edex-dim);
+}

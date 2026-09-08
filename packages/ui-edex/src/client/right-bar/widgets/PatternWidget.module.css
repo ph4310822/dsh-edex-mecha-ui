@@ -1,0 +1,44 @@
+/* PATTERN ANALYSIS widget: the reference's hexagonal warning grid. Fill
+   #ff3300 with a darker facet tone, near-black gaps, strong diffuse red
+   glow; cells blink in a staggered klaxon flicker (opacity-only keyframes,
+   transform/opacity only — no layout properties animated). */
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 4px;
+  /* The reference's diffuse red glow beneath/between the cells. */
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--edex-alert-glow) 45%, transparent));
+}
+
+.cell,
+.cellDim {
+  width: 17.5%;
+  aspect-ratio: 1 / 0.9;
+  /* The hexagon: clip-path keeps the cell shape without rotating parts. */
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background:
+    linear-gradient(160deg,
+      color-mix(in srgb, var(--edex-alert-glow) 82%, #ffffff) 0%,
+      var(--edex-alert-glow) 55%,
+      color-mix(in srgb, var(--edex-alert-glow) 55%, #000000) 100%);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--edex-alert-glow) 55%, transparent);
+  animation: hex-flicker 2.6s ease-in-out infinite;
+}
+
+/* Dim cells: the darker facet tone from the reference (dark red on black). */
+.cellDim {
+  background:
+    linear-gradient(160deg,
+      color-mix(in srgb, var(--edex-alert-glow) 30%, #000000) 0%,
+      color-mix(in srgb, var(--edex-alert-glow) 18%, #000000) 100%);
+  box-shadow: none;
+}
+
+@keyframes hex-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}

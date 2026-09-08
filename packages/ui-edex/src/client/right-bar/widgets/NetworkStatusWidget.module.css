@@ -1,0 +1,58 @@
+/* APPROACHING LIMITS widget: the MECHA red warning banner (red variant of
+   the analysis's two-tone card system). The state marker blinks via an
+   opacity-only keyframe — the klaxon flicker the reference implies. */
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  border: 1px solid color-mix(in srgb, var(--edex-alert-border) 70%, transparent);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--edex-alert-glow) 8%, transparent);
+}
+
+/* The blinking state marker: opacity-only blink, no layout properties. */
+.marker {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--edex-alert-glow);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--edex-alert-glow) 80%, transparent);
+  animation: marker-blink 1.6s steps(2, start) infinite;
+}
+
+@keyframes marker-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+.stateText {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--edex-alert-title);
+  text-shadow:
+    0 0 10px color-mix(in srgb, var(--edex-alert-glow) 65%, transparent),
+    0 1px 0 color-mix(in srgb, #000000 70%, transparent);
+}
+
+.specLine {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.specLine > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--edex-red);
+  text-shadow: 0 0 6px color-mix(in srgb, var(--edex-red) 45%, transparent);
+}
+
+.key {
+  color: var(--edex-dim);
+}

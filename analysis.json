@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "filename": "mecha-nerv-alert (web-discovered reference-shot.png)",
+    "url": "https://github.com/charlintosh/evangelion-ui-artboard",
+    "source": "vision",
+    "direction": "Japanese mecha alert HUD",
+    "query": "evangelion style UI design dark red interface",
+    "capturedAt": "2026-09-08"
+  },
+  "theme": {
+    "background": "#000000",
+    "panelTone": "#0a0b0e",
+    "primaryAccent": "#ff3300",
+    "secondaryAccent": "#ffaa00",
+    "textPrimary": "#ffaa00",
+    "textSecondary": "#b77920",
+    "semanticColors": {
+      "success": "#ffaa00",
+      "warn": "#ffaa00",
+      "error": "#ff2533",
+      "info": "#ff3300"
+    },
+    "glowColor": "#ff3300",
+    "hazardStripe": "#ff2533",
+    "hazardGap": "#2c0401",
+    "grayChrome": "#2a2c32",
+    "darkRedKeyline": "#8f1200"
+  },
+  "borderFeatures": {
+    "frame": {
+      "presence": "full",
+      "style": "solid",
+      "widthPx": 3,
+      "color": "#ff3300",
+      "cornerRadiusPx": 12,
+      "glow": { "color": "#ff3300", "blurPx": 18, "intensity": "strong" },
+      "notes": "Reference warning banners are thick rounded rectangles (~3-4px vision-measured stroke) on pure black fill. TWO-TONE system: orange variant (border #b77920, title text #ffaa00, thin lighter amber inner keyline) for PSYCHOGRAPHIC DISPLAY / INTERNAL; red variant (border #e32200, title text #ff3300, thin red inner keyline) for APPROACHING LIMITS / DANGER. Strong outer neon glow in the border's own hue; radius 10-15px."
+    },
+    "cards": {
+      "presence": "full",
+      "style": "solid",
+      "widthPx": 2,
+      "color": "#b77920",
+      "cornerRadiusPx": 10,
+      "glow": { "color": "#ffaa00", "blurPx": 12, "intensity": "moderate" },
+      "notes": "Every element in the reference is its own closed rounded box: near-black fill, 2px orange border, lighter amber inner keyline, moderate orange glow, uppercase neon title. eDEX granularity: per-widget WidgetSection boxes. The featured hex-grid container uses the RED variant instead (3px #ff3300, radius 12, strong red glow)."
+    },
+    "dividers": {
+      "presence": "none",
+      "style": "solid",
+      "widthPx": 0,
+      "color": "#1a1b20",
+      "cornerRadiusPx": 0,
+      "glow": null,
+      "notes": "No internal divider lines exist in the reference. Separation is achieved by black gaps (hex grid inter-cell gaps measure near-black #080000-#120000, 6-8px wide) and by the hazard-stripe block. Use dark #1a1b20 hairlines only where the eDEX structure structurally requires a rule."
+    },
+    "inputs": {
+      "presence": "partial",
+      "style": "solid",
+      "widthPx": 1,
+      "color": "#8f1200",
+      "cornerRadiusPx": 8,
+      "glow": null,
+      "notes": "No input fields are present in the reference; derived from the frame language as a quiet dark-red 1px rounded border, no glow."
+    },
+    "activeIndicators": {
+      "presence": "full",
+      "style": "solid",
+      "widthPx": 3,
+      "color": "#ff3300",
+      "cornerRadiusPx": 0,
+      "glow": { "color": "#ff3300", "blurPx": 8, "intensity": "moderate" },
+      "notes": "Left accent bar on active items, klaxon red with moderate glow, matching the neon keyline language."
+    }
+  },
+  "layout": {
+    "regions": [
+      { "name": "warning banner row (PSYCHOGRAPHIC DISPLAY orange / APPROACHING LIMITS red)", "topBar": true },
+      { "name": "INTERNAL id card with vertical hazard-stripe block (left column)", "leftBar": true },
+      { "name": "DANGER banner (right column, below APPROACHING LIMITS)", "rightBar": true },
+      { "name": "glowing red hexagonal warning grid (right/center, dominant element)", "rightBar": true },
+      { "name": "gray #2a2c32 structural chrome between black panels", "cards": false }
+    ]
+  },
+  "keyElements": [
+    { "type": "warning-banner", "description": "Thick rounded neon rectangle, black fill, 3-4px border with lighter inner keyline, uppercase glowing title with heavy dark outline", "region": "topBar" },
+    { "type": "id-card", "description": "INTERNAL identification card: huge 内部 glyphs in orange/gold with black outline + glow, INTERNAL label, vertical hazard-stripe block on its right edge", "region": "leftColumn" },
+    { "type": "hazard-stripes", "description": "Diagonal ~45° stripes, bright red-pink #ff2533 alternating with very dark red/black gaps, ~35-45px band width, clipped inside the orange card frame", "region": "leftColumn" },
+    { "type": "hex-warning-grid", "description": "18 visible glowing red-orange hexagons in staggered rows; fill #ff3300 with darker facet shading, near-black #080000-#120000 gaps 6-8px, strong diffuse red glow, no outer frame", "region": "rightColumn" },
+    { "type": "status-banner", "description": "DANGER / APPROACHING LIMITS banners: red variant frame, vivid orange-red glowing title", "region": "rightColumn" }
+  ],
+  "widgets": {
+    "reference": [
+      { "name": "PSYCHOGRAPHIC DISPLAY", "type": "warning-banner", "region": "topLeft", "description": "Orange banner: 3px #b77920 border, amber keyline, #ffaa00 glowing title" },
+      { "name": "APPROACHING LIMITS", "type": "warning-banner", "region": "topRight", "description": "Red banner: 4px #e32200 border, red keyline, #ff3300 glowing title" },
+      { "name": "DANGER", "type": "warning-banner", "region": "rightUpper", "description": "Red banner, same frame language, strongest urgency glow" },
+      { "name": "INTERNAL ID CARD", "type": "status-card", "region": "leftLower", "description": "Orange-framed card: 内部 glyphs, INTERNAL label, vertical hazard-stripe block" },
+      { "name": "HEX WARNING GRID", "type": "hex-matrix", "region": "rightLower", "description": "18 glowing red hexagons, staggered, black gaps, no frame around the grid itself" }
+    ],
+    "matches": [
+      { "reference": "INTERNAL ID CARD", "slot": "info", "match": "partial" },
+      { "reference": "PSYCHOGRAPHIC DISPLAY", "slot": "cpu", "match": "partial" },
+      { "reference": "APPROACHING LIMITS / DANGER", "slot": "network-status", "match": "partial" }
+    ],
+    "featured": { "reference": "HEX WARNING GRID", "name": "PATTERN ANALYSIS", "slot": "globe" }
+  },
+  "animations": {
+    "implied": true,
+    "plan": "Featured hex grid: staggered per-cell opacity blink (klaxon flicker), opacity-only keyframes; DANGER banner title glow pulse via opacity on a glow layer. No rotations, no layout-affecting properties."
+  },
+  "measurements": {
+    "tool": "scripts/analyze-ui.py + scripts/measure-accent2.py (measurement-only, post-vision)",
+    "redModal": "#ff3300",
+    "orangeModal": "#ffaa00",
+    "hazardPinkBright": "#ff2233",
+    "grayChrome": "#282a31",
+    "backgroundShare": "black 46-57% of frame",
+    "note": "analyze-ui row-scan border (#3d3d3d, 1px) is a gray-chrome transition artifact; the vision-described 3-4px neon frame governs."
+  }
+}

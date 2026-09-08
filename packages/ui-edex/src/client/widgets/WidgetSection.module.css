@@ -1,0 +1,88 @@
+/* Shared widget section chrome: the MECHA card — every element in the
+   reference is its own closed rounded neon rectangle (near-black fill, 2px
+   orange border, lighter amber inner keyline, moderate orange glow, ~10px
+   radius) — plus layout variants used by the shell bars' widget registries.
+   Cards float with small gaps; no divider lines between them. */
+
+.section {
+  padding: 8px 10px;
+  background: var(--edex-panel);
+  border: 2px solid var(--edex-card-border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 4px 5px;
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--edex-card-keyline) 40%, transparent),
+    0 0 12px color-mix(in srgb, var(--edex-amber) 22%, transparent);
+}
+
+.title {
+  color: var(--edex-amber);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+  text-shadow: 0 0 8px color-mix(in srgb, var(--edex-amber) 55%, transparent);
+}
+
+/* The RED alert variant (the analysis's two-tone system): warning banners
+   and the featured pattern-analysis card read red on the same geometry. */
+.section[data-widget='network-status'],
+.section[data-widget='pattern'] {
+  border-color: var(--edex-alert-border);
+  border-radius: 12px;
+  border-width: 3px;
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--edex-alert-border) 45%, transparent),
+    0 0 18px color-mix(in srgb, var(--edex-alert-glow) 35%, transparent);
+}
+
+.section[data-widget='network-status'] .title,
+.section[data-widget='pattern'] .title {
+  color: var(--edex-alert-title);
+  text-shadow:
+    0 0 10px color-mix(in srgb, var(--edex-alert-glow) 65%, transparent),
+    0 1px 0 color-mix(in srgb, #000000 70%, transparent);
+}
+
+/* Flex-fill the bar's leftover height (screen − other sections). */
+.fill {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Tight padding for full-bleed widgets. */
+.compact {
+  padding: 2px 4px;
+}
+
+/* Zero the chrome padding so the widget body owns all inner spacing
+   (full-bleed bottom widgets like the file list and terminal). */
+.bleed {
+  padding: 0;
+}
+
+/* Keep the section heading inset from the card edges when the section body
+   is compact or bleed. The title padding compensates the section's own
+   padding so every title text lands at the same inset as the default
+   sections (8px top, 10px sides): compact section = 2px/4px → title 6px/6px;
+   bleed section = 0 → 8px/10px. */
+.compact .title {
+  padding: 6px 6px 0;
+}
+
+.bleed .title {
+  padding: 8px 10px 0;
+}
+
+/* The center slot hosts the ORIGINAL DSH workspace, never a themed card:
+   reset every piece of the card chrome so the workspace renders untouched
+   inside the center container (which carries the chrome itself). */
+.section[data-widget='center'] {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
