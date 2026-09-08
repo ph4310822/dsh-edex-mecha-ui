@@ -141,10 +141,14 @@
   flex-direction: column;
   /* The MECHA card chrome on the workspace container (per the analysis:
      every element is its own closed rounded neon box). 2px border + title
-     strip = the 24px inset the workspace region below must respect. */
+     strip = the 24px inset the workspace region below must respect.
+     Background stays TRANSPARENT: the original UI's center column renders
+     behind this container (the shell paints above the layout frame's own
+     columns), so an opaque fill here would cover the workspace — the
+     workspace surface color comes from its own token overrides instead. */
   border: 2px solid var(--edex-card-border);
   border-radius: 10px;
-  background: var(--edex-panel);
+  background: transparent;
   box-shadow:
     0 0 12px color-mix(in srgb, var(--edex-amber) 22%, transparent),
     inset 0 0 0 1px color-mix(in srgb, var(--edex-card-keyline) 40%, transparent);
