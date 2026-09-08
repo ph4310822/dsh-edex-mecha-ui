@@ -19,7 +19,7 @@ interface WidgetSlot<P> {
   id: string             // Stable React key + data-widget attribute
   title?: string         // Optional amber section heading
   fill?: boolean         // Flex-fill the bar's leftover height
-  compact?: boolean      // Tight padding for full-bleed widgets (globe)
+  compact?: boolean      // Tight padding for full-bleed widgets
   bleed?: boolean        // Zero the chrome padding (terminal, file list)
   Component: ComponentType<P>  // The widget body
 }
@@ -45,7 +45,7 @@ Each bar file declares its composition as a typed array:
 ```ts
 const LEFT_WIDGETS: LeftWidgetSlot[] = [
   { id: 'info', Component: InfoWidget },
-  { id: 'cpu', title: 'CPU', Component: CpuWidget },
+  { id: 'cpu', title: 'PSYCHOGRAPHIC DISPLAY', Component: CpuWidget },
   { id: 'processes', title: 'PROCESSES', fill: true, Component: ProcessWidget },
 ]
 ```
@@ -54,8 +54,8 @@ const LEFT_WIDGETS: LeftWidgetSlot[] = [
 
 ```ts
 const RIGHT_WIDGETS: RightWidgetSlot[] = [
-  { id: 'network-status', title: 'NETWORK STATUS', Component: NetworkStatusWidget },
-  { id: 'globe', title: 'WORLD VIEW', compact: true, Component: GlobeWidget },
+  { id: 'network-status', title: 'APPROACHING LIMITS', Component: NetworkStatusWidget },
+  { id: 'pattern', title: 'PATTERN ANALYSIS', Component: PatternWidget },
   { id: 'traffic', title: 'TRAFFIC', fill: true, Component: TrafficWidget },
 ]
 ```
@@ -90,16 +90,16 @@ packages/ui-edex/src/client/
 │   ├── LeftBar.tsx                   # Registry + render loop
 │   ├── LeftBar.module.css            # .panel only
 │   └── widgets/
-│       ├── InfoWidget.tsx + .module.css
-│       ├── CpuWidget.tsx  + .module.css
+│       ├── InfoWidget.tsx + .module.css   # INTERNAL card (kanji + hazard stripes)
+│       ├── CpuWidget.tsx  + .module.css   # PSYCHOGRAPHIC DISPLAY
 │       └── ProcessWidget.tsx + .module.css
 │
 ├── right-bar/
 │   ├── RightBar.tsx                  # Registry + render loop
 │   ├── RightBar.module.css           # .panel only
 │   └── widgets/
-│       ├── NetworkStatusWidget.tsx + .module.css
-│       ├── GlobeWidget.tsx  + .module.css
+│       ├── NetworkStatusWidget.tsx + .module.css  # APPROACHING LIMITS banner
+│       ├── PatternWidget.tsx + .module.css        # PATTERN ANALYSIS hex grid
 │       └── TrafficWidget.tsx + .module.css
 │
 └── bottom-panel/
@@ -115,10 +115,10 @@ packages/ui-edex/src/client/
 The shell frame (`frame/EdexShell.tsx`) mounts the three bars plus an **empty
 top panel** — a full-width strip that overlays the shell's top edge above
 every other layer (see `.topPanel` in `frame/EdexShell.module.css`). The
-center region (the original UI) is also wrapped in the standard widget chrome
-via the `center` widget slot — `CENTER_SLOT` in `EdexShell.tsx` — with an
-empty title bar (like the info widget) and `bleed` padding, so the whole
-canvas participates in the same widget vocabulary.
+center region (the original UI) is framed in the same MECHA card chrome — the
+MAGI SYSLINK title strip plus the neon border on `.centerWidget` — while the
+inner `center` widget slot resets to transparent so the original workspace
+renders untouched beneath the chrome.
 
 ## Creating a new widget
 
