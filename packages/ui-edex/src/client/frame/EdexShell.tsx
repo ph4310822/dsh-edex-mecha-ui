@@ -48,8 +48,8 @@ export const TOP_BAR_HEIGHT = '0px'
  * border + 20px title strip, so the reshaped layout frame (the original UI)
  * mounts BELOW the strip and the chrome frames it without covering it.
  */
-export const CENTER_TITLE_INSET = '24px'
-export const CENTER_CHROME_INSET = '2px'
+export const CENTER_TITLE_INSET = '23px'
+export const CENTER_CHROME_INSET = '3px'
 
 /** Placeholder body for the center widget slot (WidgetSection renders children, never the Component). */
 function CenterPlaceholder(): null {

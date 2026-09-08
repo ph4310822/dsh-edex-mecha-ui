@@ -1,0 +1,1693 @@
+{
+  "url": "http://127.0.0.1:3085/",
+  "errors": [],
+  "environment": {
+    "reducedMotion": false,
+    "shellAnimatedCount": 19
+  },
+  "inventory": [
+    {
+      "desc": "span.RanKCW_marker",
+      "testid": null,
+      "animationName": "RanKCW_marker-blink",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    },
+    {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false
+    }
+  ],
+  "results": {
+    "anim_1": {
+      "desc": "span.RanKCW_marker",
+      "testid": null,
+      "animationName": "RanKCW_marker-blink",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.625",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1290,
+            "y": 51.75
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.25",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1290,
+            "y": 51.75
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.625",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1290,
+            "y": 51.75
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.625",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1290,
+            "y": 51.75
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.25",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1290,
+            "y": 51.75
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.625",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1290,
+            "y": 51.75
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "1.6s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_2": {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.995083",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.750874",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.55",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.740542",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.99507",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.866246",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 210.140625
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "2.2s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_3": {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.789407",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.590494",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.56026",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.710935",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.933956",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.998585",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 210.140625
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "3.25s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_4": {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.574005",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.818335",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.99864",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.882641",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.603957",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.570224",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 210.140625
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "2.55s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_5": {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.591581",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.76823",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.954237",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.997261",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.889495",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.685322",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 210.140625
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "3.6s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_6": {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.849512",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.609183",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.559441",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.735612",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.965206",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 210.140625
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.98",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 210.140625
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "2.9s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_7": {
+      "desc": "span.Yy7VTa_cell",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.574967",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.866239",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.992771",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.739295",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.550219",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.750866",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 262.421875
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "2.2s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_8": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.594652",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.797293",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.978476",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.978412",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.796397",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.595168",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 262.421875
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "3.25s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_9": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.915762",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.638037",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.55845",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.767941",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.990415",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.92303",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 262.421875
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "2.55s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_10": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.698431",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.562844",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.575166",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.732612",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.932984",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.999935",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 262.421875
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "3.6s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_11": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.598618",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.832642",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.995786",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.928581",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.6764",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 262.421875
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.550481",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 262.421875
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "2.9s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_12": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.975033",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.683761",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.557229",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.810705",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.999781",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.799134",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1315.125,
+            "y": 314.703125
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "2.2s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_13": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.741831",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.569827",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.57596",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.757547",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.961511",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.990765",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 314.703125
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "3.25s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_14": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.60392",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.874893",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.998698",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.827085",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.57403",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.598108",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 314.703125
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "2.55s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_15": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.616986",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.81113",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.974648",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.988894",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.85161",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.648892",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 314.703125
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "3.6s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_16": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.797798",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.580696",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.576962",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.788846",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.985816",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 314.703125
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.956242",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1544.875,
+            "y": 314.703125
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "2.9s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_17": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.611328",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.922928",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.96996",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.673462",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.560171",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.820921",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1372.5625,
+            "y": 366.984375
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "2.2s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_18": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.624042",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.843654",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.992406",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.956977",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.74877",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.573099",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1430,
+            "y": 366.984375
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "3.25s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    },
+    "anim_19": {
+      "desc": "span.Yy7VTa_cellDim",
+      "testid": null,
+      "animationName": "Yy7VTa_hex-flicker",
+      "transitionProperty": "all",
+      "infinite": true,
+      "rotation": false,
+      "samples": [
+        {
+          "angle": null,
+          "opacity": "0.865993",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.598112",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.578269",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.82814",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.999445",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 366.984375
+          }
+        },
+        {
+          "angle": null,
+          "opacity": "0.874899",
+          "transform": "none",
+          "playState": "running",
+          "aabbCenter": {
+            "x": 1487.4375,
+            "y": 366.984375
+          }
+        }
+      ],
+      "changed": true,
+      "running": true,
+      "duration": "2.55s",
+      "iteration": "infinite",
+      "rate": null,
+      "direction": null,
+      "rateOk": true,
+      "pivotDrift": null,
+      "pivotOk": true,
+      "extentOk": true
+    }
+  },
+  "verdict": {
+    "errorsZero": true,
+    "running": true,
+    "rateOk": true,
+    "pivotOk": true,
+    "extentOk": true,
+    "pass": true
+  },
+  "probedAt": "2026-09-08T15:58:22.547Z"
+}

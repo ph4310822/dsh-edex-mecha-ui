@@ -146,11 +146,11 @@
      behind this container (the shell paints above the layout frame's own
      columns), so an opaque fill here would cover the workspace — the
      workspace surface color comes from its own token overrides instead. */
-  border: 2px solid var(--edex-card-border);
+  border: 3px solid var(--edex-card-border);
   border-radius: 10px;
   background: transparent;
   box-shadow:
-    0 0 12px color-mix(in srgb, var(--edex-amber) 22%, transparent),
+    0 0 14px color-mix(in srgb, var(--edex-amber) 28%, transparent),
     inset 0 0 0 1px color-mix(in srgb, var(--edex-card-keyline) 40%, transparent);
 }
 
