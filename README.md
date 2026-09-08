@@ -1,74 +1,80 @@
-# dsh-edex-ui
+# dsh-edex-mecha-ui
 
-**DeepSeek Harness eDEX-UI shell plugin** — a terminal-inspired by https://github.com/GitSquared/edex-ui overlay for the
-DSH web GUI. Adds a classic eDEX-UI layout: system telemetry left bar, world-map
-right bar, filesystem browser, and a terminal-styled composer input — all wrapped
-around the original UI.
+**MECHA — a NERV/Evangelion-style klaxon alert HUD for the DeepSeek Harness web GUI.** A
+reference-driven eDEX-UI variant: thick rounded neon panels in a two-tone warning-orange /
+klaxon-red system on a pure-black canvas, hazard stripes, and a glowing hexagonal warning
+grid — wrapped around the fully intact original workspace UI.
 
-![dsh-edex-ui screenshot](packages/bundle/assets/screenshot.png)
+![MECHA theme preview](preview.gif)
 
-## Features
+![MECHA screenshot](screenshot.png)
 
-- **Left bar** — system overview panel: CPU, memory, swap, processes, platform
-  info, and thermal/power state, with per-core CPU sparklines
-- **Right bar** — network status + encom-globe world view with endpoint markers
-  and spline links, plus a dual up/down traffic chart with grid
-- **Top panel** — an empty full-width strip overlaying the shell's top edge
-  above every layer (ready for future chrome)
-- **Bottom panel** — one strip hosting three swappable widgets, each wrapped in
-  the same title/border chrome:
-  - **DIR** — filesystem browser as a terminal-style LIST (icon + name +
-    DIR/FILE), the same width as the left bar, with storage bar
-  - **PREVIEW** — file preview / editor pane (text, code, images), spanning
-    the center region
-  - **TERMINAL** — a real host shell: commands execute through the
-    `systemMetrics.runCommand` Remote (`sh -c`, 30s timeout), with client-side
-    `cd`/`clear`/`help`/`pwd`, ↑/↓ history, and a prompt that follows the
-    filesystem browser until you run your first command
-- **Terminal-styled composer** — flattened input capsule, green block caret, and
-  a `~/<workspace>` path prompt at the left edge of the input area
-- **Workspace-follow** — the dir panel and prompt track the active conversation's
-  workspace; switching sessions navigates both the filesystem browser and the
-  prompt
-- **Green-on-black skin** — token overrides recolour the entire original UI to
-  terminal green, without touching the user's theme preference
+Derived from an Evangelion-UI-artboard reference
+([charlintosh/evangelion-ui-artboard](https://github.com/charlintosh/evangelion-ui-artboard)),
+analyzed pixel-by-pixel (klaxon red `#ff3300`, warning orange `#ffaa00`, hazard red-pink
+`#ff2533`, pure-black canvas `#000000`).
 
-## Installation
-
-The plugin is published to npm as `@danielng23/dsh-edex-ui`. From the harness
-checkout:
+## Install
 
 ```sh
-pnpm dsh plugin --profile web add @danielng23/dsh-edex-ui
-pnpm dsh web   # serves the eDEX shell over the default GUI
+pnpm dsh plugin --profile <profile> add @danielng23/dsh-edex-mecha-ui
 ```
 
-To run the local checkout instead of the npm release (for development), add
-the bundle with a `file:` path — its `file:` dependency specs link the local
-sub-packages:
+The bundle pulls its three sub-packages from npm:
 
-```sh
-pnpm dsh plugin --profile web add file:/path/to/dsh-edex-ui/packages/bundle
-```
+| Package | Role |
+|---|---|
+| `@danielng23/dsh-edex-mecha-ui` | bundle (cordis patch wiring the shell + theme + host remote) |
+| `@danielng23/dsh-mecha-client-ui-edex` | the MECHA shell frame client |
+| `@danielng23/dsh-mecha-client-ui-theme-terminal` | klaxon alert-HUD token theme + Appearance row |
+| `@danielng23/dsh-mecha-host-system-metrics` | system-monitor Host Remote (panel data) |
 
-See [LOCAL_DEVELOPMENT.md](LOCAL_DEVELOPMENT.md) for the three-instance port
-layout (3080 baseline / 3081 npm / 3083 local), the build, and the iteration
-workflow.
+## The MECHA shell
+
+Every element is its own **closed rounded neon rectangle** — near-black fill, 3px border,
+lighter inner keyline, ~10px radius, hue-matched glow — exactly the reference's two-tone
+system:
+
+- **Orange variant** (`#b77920` border, `#ffaa00` glow, amber titles): the general widget
+  cards, the workspace container, the INTERNAL card, TRAFFIC.
+- **Red variant** (`#e32200` border, `#ff3300` glow, red titles, 4px): `APPROACHING LIMITS`
+  and `PATTERN ANALYSIS` — the alert row.
+
+### Widgets
+
+- **INTERNAL** (left bar, replaces the stock info card) — huge 内部 glyphs in warning orange
+  with dark outline + glow, the `INTERNAL` label, and a vertical ~45° hazard-stripe block
+  (`#ff2533` / `#2c0401`) clipped into the card's right edge; the live clock and the
+  hardware spec readouts continue underneath.
+- **PSYCHOGRAPHIC DISPLAY** (left bar, replaces the stock CPU card) — per-core sparklines,
+  TEMP/MIN/MAX/TASKS metrics, and memory/swap block bars restyled in warning orange.
+- **APPROACHING LIMITS** (right bar, replaces the stock network-status card) — the live
+  interface state under a blinking klaxon marker, in the red alert-banner frame.
+- **PATTERN ANALYSIS** (right bar, **featured widget replacing WORLD VIEW**) — the
+  reference's signature element: an 18-cell glowing red-orange hexagonal warning matrix in
+  staggered rows with near-black gaps and a diffuse red glow. Cell brightness derives from
+  the live network snapshot; the cells blink in a staggered klaxon flicker (opacity-only).
+- **MAGI SYSLINK title strip** frames the original workspace in the same card chrome (the
+  workspace itself stays untouched and interactive beneath it).
+- PROCESSES, TRAFFIC, DIR/PREVIEW/TERMINAL keep their slots, recolored by the theme.
+
+### Theme mechanics
+
+One accent drives everything (`Settings → General → Theme Color`, default klaxon
+`#ff3300`): the shell palette (`--edex-*`), the terminal composer/sidebar overrides, and
+the alias-token layer that recolors the original UI (`--dsw-alias-*`), with fixed semantic
+accents (warn `#ffaa00`, error `#ff2533`). The workspace background tokens read the same
+near-black card surface (`#0a0b0e`) as the shell cards, so the whole canvas is one surface.
 
 ## Development
 
-See [LOCAL_DEVELOPMENT.md](LOCAL_DEVELOPMENT.md) for the full build, install,
-and iteration workflow. The widget architecture for the shell bars is
-documented in [WIDGETS.md](WIDGETS.md).
+```sh
+pnpm install && ./scripts/link-harness.sh   # + harness @deepseek-ai/* symlinks
+pnpm build                                  # harness tsdown toolchain
+```
 
-## Packages
-
-| Package | Host/Client | Description |
-|---|---|---|
-| `packages/bundle` | — | Installable bundle (`cordis.patch.yml`) |
-| `packages/ui-edex` | client | The eDEX shell frame and all panels |
-| `packages/ui-theme-terminal` | client | Appearance → Terminal theme row |
-| `packages/host/system-metrics` | host | System telemetry RPC + file read/write + `runCommand` shell execution |
+See `WIDGETS.md` for the swappable-widget registry and `analysis.json` / `analysis.md` for
+the measured reference analysis this theme was built from.
 
 ## License
 

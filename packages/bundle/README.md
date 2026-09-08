@@ -1,18 +1,20 @@
-# @danielng23/dsh-edex-ui
+# @danielng23/dsh-edex-mecha-ui
 
-**DeepSeek Harness eDEX-UI shell plugin** — a terminal-inspired overlay for the
-DSH web GUI. Adds a classic eDEX-UI layout: system telemetry left bar, world-map
-right bar, filesystem browser, and a terminal-styled composer input — all wrapped
-around the original UI.
+**DeepSeek Harness MECHA eDEX shell** — a NERV/Evangelion-style klaxon alert HUD overlay
+for the DSH web GUI: thick rounded neon panels in a two-tone warning-orange/klaxon-red
+system on black, hazard stripes, the PATTERN ANALYSIS hex warning grid, and the original
+UI intact in the center.
 
-![dsh-edex-ui screenshot](screenshot.png)
+![MECHA screenshot](assets/screenshot.png)
 
 ## Features
 
-- **Left bar** — system overview panel: CPU, memory, swap, processes, platform
+- **Left bar** — the INTERNAL identification card (内部 glyphs + hazard stripes) and
+  the PSYCHOGRAPHIC DISPLAY system panel: CPU, memory, swap, processes, platform
   info, and thermal/power state, with per-core CPU sparklines
-- **Right bar** — network status + encom-globe world view with endpoint markers
-  and spline links, plus a dual up/down traffic chart with grid
+- **Right bar** — the APPROACHING LIMITS alert banner (live interface state), the
+  PATTERN ANALYSIS hex warning grid (18 glowing klaxon-red cells with staggered
+  flicker, replacing the world-view globe), and a dual up/down traffic chart
 - **Bottom-left** — filesystem browser: directory listing, file preview, storage
   bar, with folder/file SVG icons in the theme green
 - **Bottom-right** — file preview pane (text, code, images)
