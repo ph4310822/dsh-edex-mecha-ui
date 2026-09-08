@@ -31,17 +31,17 @@ UI intact in the center.
 From the harness checkout:
 
 ```sh
-pnpm dsh plugin --profile web add @danielng23/dsh-edex-ui
+pnpm dsh plugin --profile web add @danielng23/dsh-edex-mecha-ui
 ```
 
 ## Packages
 
 | Package | Host/Client | Description |
 |---|---|---|
-| `@danielng23/dsh-edex-ui` | — | Installable bundle (`cordis.patch.yml`) |
-| `@danielng23/dsh-client-ui-edex` | client | The eDEX shell frame and all panels |
-| `@danielng23/dsh-client-ui-theme-terminal` | client | Appearance → Terminal theme row |
-| `@danielng23/dsh-host-system-metrics` | host | System telemetry RPC endpoints |
+| `@danielng23/dsh-edex-mecha-ui` | — | Installable bundle (`cordis.patch.yml`) |
+| `@danielng23/dsh-mecha-client-ui-edex` | client | The eDEX shell frame and all panels |
+| `@danielng23/dsh-mecha-client-ui-theme-terminal` | client | Appearance → Terminal theme row |
+| `@danielng23/dsh-mecha-host-system-metrics` | host | System telemetry RPC endpoints |
 
 ## License
 
